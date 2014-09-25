@@ -4,98 +4,94 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="utf-8">
 	<title>Indian Cultural Council (ICC) at UTA</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/davmyStyle.css">
-	<link rel="stylesheet" href="css/carousel.css">
-	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
- -->	<!-- <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen"> 
-	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/myStyle.css">
+	<link rel="stylesheet" href="css/index1.css">
+	<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen"> 
 	<link href="http://fonts.googleapis.com/css?family=Rob
-	oto+Condensed|Yesteryear|Indie+Flower|&effect=shadow-multiple|3d-float|neon" rel='stylesheet' type='text/css'> -->
+	oto+Condensed|Yesteryear|Indie+Flower|&effect=shadow-multiple|3d-float|neon" rel='stylesheet' type='text/css'>
 </head>
 <body>
 	
 	<!-- Navbar -->
-	<nav class="navbar navbar-inverse" role="navigation">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand font-effect-3d" href="#">I.C.C</a>
-			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="" class="btn-show-modal"><span class="glyphicon glyphicon-home"></span> About Us</a></li>
-					<li><a href="#events"><span class="glyphicon glyphicon-calendar"></span> Events</a></li>
-					<li><a href="#newStudents"><span class="glyphicon glyphicon-user"></span> New Students</a></li>
-					<li><a href="#team"><i class="fa fa-users"></i> Team</a></li>
-					<li><a href="#space-Places"><i class="fa fa-cutlery"></i> Nearby Restaurants</a></li>
-					<li><a href="#space-Announcements"><i class="fa fa-bullhorn"></i> Announcements</a></li>
-					<li><a href="basic.htm" class="photoGallery"><i class="fa fa-camera"></i> Photo Gallery</a></li>
-					<li><a href="https://docs.google.com/forms/d/1YEOB16fOjrn6ug3aF0RVG4sp3Zu6dRNFNq9Klv7PhiE/viewform?embedded=true"  onclick="window.open('https://docs.google.com/forms/d/1YEOB16fOjrn6ug3aF0RVG4sp3Zu6dRNFNq9Klv7PhiE/viewform?embedded=true', 'newwindow', 'width=400, height=350'); return false;"><i class="glyphicon glyphicon-comment"></i> Contact Us</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
+	<div class="navbar-wrapper">
+		<div class="container">
+			<div class="navbar navbar-inner navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container" id="main">
+					<div class = "navbar-header">
+						<img src = "images/smallLogoNavbar.png" >
+						<!-- <label class="navbar-brand font-effect-3dText"></label> -->
+					</div>
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".myIDForCollapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse myIDForCollapse">
+						<ul class="nav navbar-nav pull-left">
+							<li><a href="" class="btn-show-modal"><span class="glyphicon glyphicon-home"></span> About Us</a></li>
+							<li><a href="#space-boxOf4Features"><span class="glyphicon glyphicon-calendar"></span> Events</a></li>
+							<li><a href="#space-boxOf4Features"><span class="glyphicon glyphicon-user"></span> New Students</a></li>
+							<li><a href="#space-boxOf4Features"><i class="fa fa-users"></i> Team</a></li>
+							<li><a href="#space-Places"><i class="fa fa-cutlery"></i> Nearby Restaurants</a></li>
+							<li><a href="#space-Announcements"><i class="fa fa-bullhorn"></i> Announcements</a></li>
+							<li><a href="basic.htm" class="photoGallery"><i class="fa fa-camera"></i> Photo Gallery</a></li>
+							<li><a href="#contactUs"><i class="fa fa-weixin"></i> Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
 	<!-- End Of Navbar -->
-
-
+	
+	
 	<!-- Scroll Up Button -->
 	<a id="back-to-top" href="#" class="btn btn-danger btn-lg back-to-top" role="button" title="Scroll Up" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 	<!-- End Of Scroll Up Button -->
 
 
 	<!-- Carousel Section -->
-	<section class="section-white">
-		<div class="container">
+	<div class="carousel slide carousel-fit" id="myCarousel">
 
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
-				</ol>
+		<!--Indicators  -->
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+			<li  data-slide-to="1" data-target="#myCarousel"></li>
+			<li  data-slide-to="2" data-target="#myCarousel"></li>
+		</ol>
 
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="./images/logo22_large.jpg" alt="...">
-						
-					</div>
-					<div class="item">
-						<!-- <img src="./images/slide_logo3.png" alt="..."> -->
-						<img src="./images/slide_logo1.jpg" alt="...">
-						<!-- 			<img src="./images/ICC (3).png" alt="..."> -->
-					</div>
-					<!-- <div class="item">
-						
-						<img src="./images/logo3.jpg" alt="...">
-						
-					</div> -->
+		<!-- Slides come here -->
+		<div class="carousel-inner">
+			<div class="item active" id="slide1">
+				<div class="carousel-caption">
+					<h4 class="font-effect-3dText"></h4>
 				</div>
-
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				</a>
-				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				</a>
 			</div>
 
-		</div>
-	</section>
-	<!-- End Of Carousel -->
+			<div class="item" id="slide2">
+				<div class="carousel-caption">
+					<h4 class="font-effect-3dText"></h4>
+				</div>
+			</div>
 
+
+			<div class="item" id="slide3">
+				<div class="carousel-caption">
+					<h4 class="font-effect-3dText"></h4>
+				</div>
+			</div>
+		</div><!-- End of slides -->	
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<i class="fa fa-angle-double-left fa-5x"></i>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<i class="fa fa-angle-double-right fa-5x"></i>
+		</a>
+	</div>
+	<!-- End Of Carousel -->
+	
 
 	<!--Box Of 4 Features  -->
 	<div class="container" id="boxOf4Features">
@@ -106,7 +102,7 @@
 			<!-- Boxes de Acoes -->
 
 			<div class="col-xs-12 col-sm-6 col-lg-3">
-				<div class="box box4ParaEvents" id="events">							
+				<div class="box box4ParaEvents">							
 					<div class="icon">
 						<div class="image"><i class="fa fa-calendar"></i></div>
 						<div class="info">
@@ -126,13 +122,13 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-lg-3">
-				<div class="box box4ParaNewStudents" id="newStudents">							
+				<div class="box box4ParaNewStudents">							
 					<div class="icon">
-						<div class="image"><i class="glyphicon glyphicon-user"></i></div>
+						<div class="image"><i class="fa fa-graduation-cap"></i></div>
 						<div class="info">
 							<h3 class="title">NewStudents</h3>
 							<p class=""> 
-
+								
 								Answers several queries regarding Visa, Travelling and provides travelling guide to new Students.
 							</p>
 							<div class="more">
@@ -146,20 +142,19 @@
 				</div> 
 			</div>		    
 			<div class="col-xs-12 col-sm-6 col-lg-3">
-				<div class="box box4ParaTeam" id="team">							
+				<div class="box box4ParaTeam">							
 					<div class="icon">
-						<div class="image"><i class="fa fa-users"></i>
-						</div>
+						<div class="image"><i class="fa fa-users"></i></div>
 						<div class="info">
 							<h3 class="title">Team</h3>
 							<p class="">
-								The current members along with advisors without whom this community would not be posssible.
+								The current members of the ICC without whom this community would not be posssible.
 							</p>
 							<div class="more">
-								<a id="teamButton" href="#space-Team" type="button" class="btn btn-sample">
-									<i class="fa fa-angle-double-right fa-2x">
-									</i>
-								</a>
+								<!-- <a href="#space" title="Title Link">
+									Read More <i class="fa fa-angle-double-right"></i>
+								</a> -->
+								<a id="teamButton" href="#space-Team" type="button" class="btn btn-sample"><i class="fa fa-angle-double-right fa-2x"></i></a>
 							</div>
 						</div>
 					</div>
@@ -167,22 +162,72 @@
 				</div> 
 			</div>
 			<div class="col-xs-12 col-sm-6 col-lg-3">
-				<div class="box box4ParaContactUs" id="contact">							
+				<div class="box box4ParaContactUs">							
 					<div class="icon">
-						<div class="image">
-							<i class="glyphicon glyphicon-comment"></i>
-						</div>
+						<div class="image"><i class="fa fa-weixin"></i></div>
 						<div class="info">
 							<h3 class="title">Contact Us</h3>
 							<p class="">
-								If you have any queries/questions feel free to contact us using this form and fill in correct details.
+								If you have any queries feel free to contact us using this form and fill in correct details.
 							</p>
 							<div class="more">
-								<a id="Contact" class="btn btn-sample box4ParaContactUs" href="https://docs.google.com/forms/d/1YEOB16fOjrn6ug3aF0RVG4sp3Zu6dRNFNq9Klv7PhiE/viewform?embedded=true"  onclick="window.open('https://docs.google.com/forms/d/1YEOB16fOjrn6ug3aF0RVG4sp3Zu6dRNFNq9Klv7PhiE/viewform?embedded=true', 'newwindow', 'width=300, height=250'); return false;">
-									<!-- <a id="contactUs" class="btn btn-sample box4Buttons" data-toggle="modal" data-target="#contact" data-original-title> -->
-									<i class="fa fa-angle-double-right fa-2x">									
-									</i>
+								<a id="contactUs" class="btn btn-sample box4Buttons" data-toggle="modal" data-target="#contact" data-original-title>
+									<i class="fa fa-angle-double-right fa-2x"></i>
 								</a>
+								<!-- Modal -->
+								<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="panel panel-primary">
+											<div class="panel-heading">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+												<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Any questions? Feel free to contact us.</h4>
+											</div>
+											<form id="myForm" action="hsc" method="get" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+													<div class="row">
+														<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+															<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+														</div>
+														<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+															<input class="form-control" name="lastname" placeholder="Lastname" type="text" required autofocus />
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+															<input class="form-control" name="utaId" placeholder="100xxxxxxx" type="text" required autofocus />
+														</div>
+														<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+															<input class="form-control" name="major" placeholder="Major" type="text" required autofocus/>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+															<input class="form-control" name="email" placeholder="E-mail" type="text" required autofocus/>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+															<input class="form-control" name="subject" placeholder="Subject" type="text" required autofocus/>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-12 col-md-12 col-sm-12">
+															<textarea style="resize:vertical;" class="form-control" placeholder="Message..." rows="6" name="comment" required autofocus></textarea>
+														</div>
+													</div>
+												</div>  
+												<div class="panel-footer" style="margin-bottom:-14px;">
+													<!-- <input id="submit" type="submit" class="btn btn-success" value="Send"/> -->
+													<input id="submitButton" type="button" class="btn btn-success" value="Send"/>
+													<!--<span class="glyphicon glyphicon-ok"></span>-->
+													<input type="reset" class="btn btn-danger" value="Clear" />
+													<!--<span class="glyphicon glyphicon-remove"></span>-->
+													<button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -193,9 +238,9 @@
 	</div>
 	<!-- End Of Box of 4 Features -->
 
-
-
-
+	
+	
+	
 	<!-- Events Section -->
 	<div id="space-Events"></div>
 	<div class="container">
@@ -206,7 +251,7 @@
 			<h3 class="wellContent" id="EventsContent">ICC plans and conducts several Activites each academic year. There are 4 major Events that are part of ICC, starting with Daawat in Fall. Students from all communities are invited to be a part of these events. 
 			</h3>
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-sm-2">
 					<div class="panel panel-danger" id="IndependenceListItem">
 						<div class="panel-heading">
 							<div class="panel-title">
@@ -215,7 +260,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-sm-2">
 					<div class="panel panel-danger" id="GarbaListItem">
 						<div class="panel-heading">
 							<div class="panel-title">
@@ -225,7 +270,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4" id="DaawatListItem">
+				<div class="col-sm-2" id="DaawatListItem">
 					<div class="panel panel-danger">
 						<div class="panel-heading">
 							<div class="panel-title">
@@ -234,19 +279,17 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-sm-2">
 					<div class="panel panel-danger" id="RepublicDayListItem">
 						<div class="panel-heading">
 							<div class="panel-title">
-								<h4>Republic Day</h4>
+								<h4>RepublicDay</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- Holi is JanmastamiListItem -->
-				<div class="col-lg-4">
+				<div class="col-sm-2">
 					<div class="panel panel-danger" id="JanmastamiListItem">
 						<div class="panel-heading">
 							<div class="panel-title">
@@ -255,7 +298,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-sm-2">
 					<div class="panel panel-danger" id="SwaagatListItem">
 						<div class="panel-heading">
 							<div class="panel-title">
@@ -446,7 +489,7 @@
 										<li> Necessary books/notebooks (some suggested books are - Clark's Tables, a good dictionary/thesaurus, a booklet for units conversion) [note: there should be no legal hassles taking photocopies of books - but don't flaunt them to around campus. 
 											<li>  Copy of address book/telephone book/diary.</li> 
 
-											<li> Some stationery and related items suggested (not absolutely necessary - just for the first few weeks) are : Rubber stamp with house address, airmail covers, few Indian razor blades for cutting work, screw driver, Indian postal stamps for sending letters through someone coming to India </li>
+											<li> Some stationery and related items suggested (not absolutely necessary - just for the first few weeks) are : Rubber stamp with house address, airmail covers, few Indian razor blades for cutting work, screw <i class="fa fa-car"></i> driver, Indian postal stamps for sending letters through someone coming to India </li>
 
 											<li>  Medical history file.</li>
 
@@ -694,7 +737,7 @@
 		</div>
 	</div>
 	<!-- End of New Student -->
-
+	
 	<!-- Places To Visit -->
 	<div id="space-Places"></div>
 	<div class="container">
@@ -708,14 +751,14 @@
 					<div class="accordion">
 						<div class="accordion-group">
 							<div class="accordion-heading country"  style="float:left;">
-								<a id="restaurant" class="accordion-toggle btn btn-default" data-toggle="collapse" href="#country1">South Of UTA <i class="fa fa-arrow-circle-down fa-2x"></i></a>
+								<a class="accordion-toggle btn btn-default" data-toggle="collapse" href="#country1">South Of UTA <i class="fa fa-arrow-circle-down fa-2x"></i></a>
 							</div>
 							<div id="country1" class="accordion-body collapse">
 								<div class="accordion-inner">
 									<table class="table table-striped table-condensed">
 										<thead>
 											<tr>
-												<th style="padding-top:2%;">Restaurant</th>
+												<th>Restaurant</th>
 												<th><i class="fa fa-paw"></i> Walkable/ <i class="fa fa-car"></i> Drivable</th>
 											</tr>
 										</thead>   
@@ -753,15 +796,15 @@
 								</div>
 							</div>
 							<div class="accordion-heading country"  style="float:left;">
-								<a id="restaurant2" class="accordion-toggle btn btn-default" data-toggle="collapse" href="#country2">North Of UTA <i class="fa fa-arrow-circle-down fa-2x"></i></a>
+								<a class="accordion-toggle btn btn-default" data-toggle="collapse" href="#country2">North Of UTA <i class="fa fa-arrow-circle-down fa-2x"></i></a>
 							</div>
 							<div id="country2" class="accordion-body collapse">
 								<div class="accordion-inner">
 									<table class="table table-striped table-condensed">
 										<thead>
 											<tr>
-												<th style="padding-top:2%;">Restaurant</th>
-												<th><i class="fa fa-paw"></i> Walkable/ <i class="fa fa-car"></i> Drivable</th>
+												<th>Restaurant</th>
+												<th><i class="fa fa-paw"></i> Walkable/Drivable</th>
 											</tr>
 										</thead>   
 										<tbody>
@@ -795,15 +838,15 @@
 								</div>
 							</div>
 							<div class="accordion-heading country"  style="float:left;">
-								<a id="restaurant3" class="accordion-toggle btn btn-default" data-toggle="collapse" href="#country3">Shops or Groceries <i class="fa fa-arrow-circle-down fa-2x"></i></a>
+								<a class="accordion-toggle btn btn-default" data-toggle="collapse" href="#country3">Shops or Groceries <i class="fa fa-arrow-circle-down fa-2x"></i></a>
 							</div>
 							<div id="country3" class="accordion-body collapse">
 								<div class="accordion-inner">
 									<table class="table table-striped table-condensed">
 										<thead>
 											<tr>
-												<th style="padding-top:2%;">Restaurant</th>
-												<th><i class="fa fa-paw"></i> Walkable/ <i class="fa fa-car"></i> Drivable</th>
+												<th>Restaurant</th>
+												<th><i class="fa fa-paw"></i> Walkable/Drivable</th>
 											</tr>
 										</thead>   
 										<tbody>
@@ -848,7 +891,10 @@
 					<ol class="ol-font">
 						<div class="container"> 
 							<li>
-								<a href="https://docs.google.com/forms/d/1MgxxCWq5KjUZlERku3ITCH3xU3yg4_1ZbLeJckoR_4A/viewform?embedded=true">Walmart Pick up Form</a>
+								<a href="https://docs.google.com/forms/d/1MgxxCWq5KjUZlERku3ITCH3xU3yg4_1ZbLeJckoR_4A/viewform?embedded=true">Pick up Form</a>
+							</li>
+							<li>
+								<a href="https://docs.google.com/forms/d/1MgxxCWq5KjUZlERku3ITCH3xU3yg4_1ZbLeJckoR_4A/viewform?embedded=true">Pick up Form</a>
 							</li>
 						</div>
 					</ol>
@@ -857,7 +903,7 @@
 		</div>
 	</div>
 	<!-- End of Announcements -->
-
+	
 	<!-- Team -->
 	<div id="space-Team"></div>
 	<div id="teamHolder">
@@ -866,7 +912,7 @@
 			<fieldset>
 				<legend class="font-effect-3d">Team</legend>
 			</fieldset>
-
+			
 			<div class="container-fluid container-articles">
 				<!-- Row 1 for Team -->
 				<div class="row articles">
@@ -874,49 +920,30 @@
 						<figure class="cap-bot">
 							<img src="images/Team/3.jpg" alt="">
 							<div class="article-overlay"></div>
-							<figcaption>Advisor: Apparao B Pandu</figcaption>
+							<figcaption>President</figcaption>
 						</figure>
 					</div>
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
 							<img src="images/Team/4.jpg" alt="">
 							<div class="article-overlay"></div>
-							<figcaption>Advisor: Nilakshi Veerabathina</figcaption>
+							<figcaption>President</figcaption>
 						</figure>
 					</div>
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
 							<img src="images/Team/8.jpg" alt="">
 							<div class="article-overlay"></div>
-							<figcaption>Advisor: Nitesh Rajput</figcaption>
+							<figcaption>President</figcaption>
 						</figure>
 					</div>
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
 							<img src="images/Team/9.jpg" alt="">
 							<div class="article-overlay"></div>
-							<figcaption>Advisor: Prasad Joglekar</figcaption>
+							<figcaption>President</figcaption>
 						</figure>
 					</div>
-					
-					<div class="col-md-2 article-img">
-						<figure class="cap-bot">
-							<img src="images/Team/14.jpg" alt="">
-							<div class="article-overlay"></div>
-							<figcaption>Advisor: Soumyava Das</figcaption>
-						</figure>
-					</div>
-					<div class="col-md-2 article-img">
-						<figure class="cap-bot">
-							<img src="images/Team/president.jpg" alt="">
-							<div class="article-overlay"></div>
-							<figcaption>President:Sashidhar Raghuraman</figcaption>
-						</figure>
-					</div>
-				</div>
-				<!-- Row 2 for Team -->
-				<div class="row articles">
-					
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
 							<img src="images/Team/10.jpg" alt="">
@@ -926,9 +953,34 @@
 					</div>
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
-							<img src="images/Team/treasurer.jpg" alt="">
+							<img src="images/Team/14.jpg" alt="">
+							<div class="article-overlay"></div>
+							<figcaption>President</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- Row 2 for Team -->
+				<div class="row articles">
+					<div class="col-md-2 article-img">
+						<figure class="cap-bot">
+							<img src="http://placehold.it/160x160" alt="">
+							<div class="article-overlay"></div>
+							<figcaption>President:Sashidhar Raghuraman</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-md-2 article-img">
+						<figure class="cap-bot">
+							<img src="http://placehold.it/160x160" alt="">
 							<div class="article-overlay"></div>
 							<figcaption>Treasurer:Sriram Sambasivam</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-2 article-img">
+						<figure class="cap-bot">
+							<img src="http://placehold.it/160x160" alt="">
+							<div class="article-overlay"></div>
+							<figcaption>Secretary:Vatsal Kesarwani</figcaption>
 						</figure>
 					</div>
 					<div class="col-md-2 article-img">
@@ -938,45 +990,36 @@
 							<figcaption>WebMaster:Veena Balasubramanya</figcaption>
 						</figure>
 					</div>
-					<div class="col-md-2 article-img">
-						<figure class="cap-bot">
-							<img src="images/Team/secretary.jpg" alt="">
-							<div class="article-overlay"></div>
-							<figcaption>Secretary:Vatsal Kesarwani</figcaption>
-						</figure>
-					</div>
-					
-					<div class="col-md-2 article-img">
-						<figure class="cap-bot">
-							<img src="images/Team/logistics.jpg" alt="">
-							<div class="article-overlay"></div>
-							<figcaption>Logistics : Arvind Natarajan</figcaption>
-						</figure>
-					</div>
 
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
-							<img src="images/Team/creativehead.jpg" alt="">
+							<img src="images/Team/eventcoordinator.jpg" alt="">
 							<div class="article-overlay"></div>
 							<figcaption>Creative Head : Koumudi Chari</figcaption>
 						</figure>
 					</div>
 
 
+					<div class="col-md-2 article-img">
+						<figure class="cap-bot">
+							<img src="http://placehold.it/160x160" alt="">
+							<div class="article-overlay"></div>
+							<figcaption>Logistics : Arvind Madurai Natarajan</figcaption>
+						</figure>
+					</div>
 				</div>
 				<!-- Row 3 for Team -->
 				<div class="row articles">
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
-							
-							<img src="images/Team/publicity.jpg" alt="">
+							<img src="http://placehold.it/160x160" alt="">
 							<div class="article-overlay"></div>
 							<figcaption>Publicity and PR: Sagar Bhavsar</figcaption>
 						</figure>
 					</div>
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
-							<img src="images/Team/sagargandhi.jpg" alt="">
+							<img src="http://placehold.it/160x160" alt="">
 							<div class="article-overlay"></div>
 							<figcaption>Cultural Coordinator : Sagar Gandhi</figcaption>
 						</figure>
@@ -984,15 +1027,15 @@
 
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
-							<img src="images/Team/eventcoordinator.jpg" alt="">
+							<img src="http://placehold.it/160x160" alt="">
 							<div class="article-overlay"></div>
-							<figcaption>Event Coordinator : Charu Pande</figcaption>
+							<figcaption>Event Coordinator : Charu Ch</figcaption>
 						</figure>
 					</div>
 
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
-							<img src="images/Team/jointsecretary.jpg" alt="">
+							<img src="http://placehold.it/160x160" alt="">
 							<div class="article-overlay"></div>
 							<figcaption>Joint Secretary : Arjun Sridhar</figcaption>
 						</figure>
@@ -1000,26 +1043,25 @@
 
 					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
-							<img src="images/Team/saketh.jpg" alt="">
+							<img src="http://placehold.it/160x160" alt="">
 							<div class="article-overlay"></div>
 							<figcaption>Joint Treasurer : Saketh Ram Peri</figcaption>
 						</figure>
 					</div>	
-					<!-- <div class="col-md-2 article-img">
+					<div class="col-md-2 article-img">
 						<figure class="cap-bot">
 							<img src="http://placehold.it/160x160" alt="">
 							<div class="article-overlay"></div>
 							<figcaption>Add Member</figcaption>
 						</figure>
-					</div> -->	
+					</div>	
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- End of Team -->
 
-	<!-- test Area -->
-	<!-- end of test Area -->
+
 
 	<!-- Footer -->
 	<div id="footer-bottom" class="myFooter">
@@ -1109,56 +1151,3 @@
 	<script src="js/myScript.js"></script>
 </body>
 </html>
-
-
-<!-- Modal -->
-								<!-- <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-									<div class="modal-dialog">
-										<div class="panel panel-primary">
-											<div class="panel-heading">
-												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-												<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Any questions? Feel free to contact us.</h4>
-											</div>
-											<form id="myForm" action="hsc" method="get" accept-charset="utf-8">
-												<div class="modal-body" style="padding: 5px;">
-													<div class="row">
-														<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-															<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
-														</div>
-														<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-															<input class="form-control" name="lastname" placeholder="Lastname" type="text" required autofocus />
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-															<input class="form-control" name="utaId" placeholder="100xxxxxxx" type="text" required autofocus />
-														</div>
-														<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-															<input class="form-control" name="major" placeholder="Major" type="text" required autofocus/>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-															<input class="form-control" name="email" placeholder="E-mail" type="text" required autofocus/>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-															<input class="form-control" name="subject" placeholder="Subject" type="text" required autofocus/>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-12 col-md-12 col-sm-12">
-															<textarea style="resize:vertical;" class="form-control" placeholder="Message..." rows="6" name="comment" required autofocus></textarea>
-														</div>
-													</div>
-												</div>  
-												<div class="panel-footer" style="margin-bottom:-14px;">
-													<input id="submitButton" type="button" class="btn btn-success" value="Send"/>
-													<input type="reset" class="btn btn-danger" value="Clear" />
-													<button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div> -->
